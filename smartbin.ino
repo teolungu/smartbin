@@ -20,7 +20,7 @@ const int ledRosu = 12;
 Servo capac;
 bool capacDeschis = false;
 unsigned long deschidereStart = 0;
-const unsigned long durataDeschidere = 1000; // 10 secunde
+const unsigned long durataDeschidere = 7000; // 7 secunde
 
 void setup() {
   // Senzor 1
@@ -72,9 +72,9 @@ void loop() {
   Serial.println(distantaGunoi);
 
   // Aprindem LED-ul potrivit
-  if (distantaGunoi > 25) {
+  if (distantaGunoi > 15) {
     aprindeDoarLED(ledVerde);
-  } else if (distantaGunoi > 10 && distantaGunoi <= 25) {
+  } else if (distantaGunoi > 2 && distantaGunoi <= 15) {
     aprindeDoarLED(ledGalben);
   } else {
     aprindeDoarLED(ledRosu);
