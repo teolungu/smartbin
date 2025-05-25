@@ -1,12 +1,12 @@
 #include <Servo.h>
 
 // Primul senzor (detecție mână)
-const int trig1 = 4;
-const int echo1 = 5;
+const int trig1 = 6;
+const int echo1 = 7;
 
 // Al doilea senzor (nivel umplere)
-const int trig2 = 6;
-const int echo2 = 7;
+const int trig2 = 4;
+const int echo2 = 5;
 
 // Buzzer și servo
 const int buzzerPin = 8;
@@ -20,7 +20,7 @@ const int ledRosu = 12;
 Servo capac;
 bool capacDeschis = false;
 unsigned long deschidereStart = 0;
-const unsigned long durataDeschidere = 7000; // 7 secunde
+const unsigned long durataDeschidere = 5000; // 5 secunde
 
 void setup() {
   // Senzor 1
@@ -74,7 +74,7 @@ void loop() {
   // Aprindem LED-ul potrivit
   if (distantaGunoi > 15) {
     aprindeDoarLED(ledVerde);
-  } else if (distantaGunoi > 2 && distantaGunoi <= 15) {
+  } else if (distantaGunoi > 5 && distantaGunoi <= 15) {
     aprindeDoarLED(ledGalben);
   } else {
     aprindeDoarLED(ledRosu);
