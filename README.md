@@ -2,7 +2,7 @@
 
 This Arduino-based project controls an automated smart trash bin that opens its lid when a hand is detected, alerts the user with a buzzer, and visually indicates the fill level of the bin using ultrasonic distance sensing and LEDs.
 
-## 🔧 Hardware Used
+## Hardware Used
 
 - Arduino UNO R3
 - 2x HC-SR04 ultrasonic sensors
@@ -13,7 +13,7 @@ This Arduino-based project controls an automated smart trash bin that opens its 
 - External 5V or 9V power source (optional for standalone use)
 - Breadboard and jumper wires
 
-## 📌 Features
+## Features
 
 - **Hand detection** using HC-SR04: opens the lid via servo motor and activates a buzzer.
 - **Auto-closing** after 10 seconds.
@@ -22,7 +22,7 @@ This Arduino-based project controls an automated smart trash bin that opens its 
   - Yellow LED → bin is partially filled
   - Red LED → bin is full
 
-## 📎 Pin Mapping
+## Pin Mapping
 
 | Component       | Arduino Pin |
 |----------------|-------------|
@@ -36,7 +36,7 @@ This Arduino-based project controls an automated smart trash bin that opens its 
 | Yellow LED     | D11 |
 | Red LED        | D12 |
 
-## 🧠 How It Works
+## How It Works
 
 - When an object (e.g. a hand) is detected at less than 10 cm above the bin, the servo opens the lid and the buzzer activates.
 - The lid stays open for 10 seconds, then closes and stops the buzzer.
