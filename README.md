@@ -16,7 +16,7 @@ This Arduino-based project controls an automated smart trash bin that opens its 
 ## Features
 
 - **Hand detection** using HC-SR04: opens the lid via servo motor and activates a buzzer.
-- **Auto-closing** after 10 seconds.
+- **Auto-closing** after 5 seconds.
 - **Fill-level detection** using a second HC-SR04:
   - Green LED → bin is empty
   - Yellow LED → bin is partially filled
