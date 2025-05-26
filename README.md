@@ -41,6 +41,6 @@ This Arduino-based project controls an automated smart trash bin that opens its 
 - When an object (e.g. a hand) is detected at less than 10 cm above the bin, the servo opens the lid and the buzzer activates.
 - The lid stays open for 10 seconds, then closes and stops the buzzer.
 - Continuously, the second ultrasonic sensor measures the distance to the trash. Based on this:
-  - Green LED is turned on if distance > 15 cm
-  - Yellow LED is turned on if distance between 2–15 cm
-  - Red LED is turned on if distance < 2 cm
+  - Green LED is turned on if distance > 16 cm
+  - Yellow LED is turned on if distance between 8-16 cm
+  - Red LED is turned on if distance < 8 cm
